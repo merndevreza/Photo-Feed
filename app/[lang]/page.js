@@ -1,6 +1,7 @@
-import { getDictionary } from "./dictionaries";
+import PhotoList from "@/components/PhotoList";
 
-export default async function Home({ params: { lang } }) {
-  const dictionary = await getDictionary(lang);
-  return <div>{dictionary.followers}</div>;
+export default async function Home() {
+  return <div>
+    <PhotoList/>
+  </div>;
 }
